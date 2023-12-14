@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\URL;
 | contains the "web" middleware group. Now create something great!
 |
 */
-URL::forceScheme('https');
+URL::forceScheme('http');
 
 // returns the home page with all posts
 Route::get('/', PostController::class .'@index')->name('posts.index');
